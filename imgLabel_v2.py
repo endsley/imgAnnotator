@@ -57,7 +57,7 @@ def run_app():
             directory = filedialog.askdirectory()
             if directory:
                 self.image_list = [os.path.join(directory, f) for f in os.listdir(directory)
-                                   if f.lower().endswith(('png', 'jpg', 'jpeg', 'bmp', 'gif'))]
+                                   if f.lower().endswith(('png', 'jpg', 'jpeg', 'bmp', 'gif', '.tiff'))]
                 self.image_index = 0
                 self.show_image()
 
